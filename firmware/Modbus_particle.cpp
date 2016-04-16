@@ -93,9 +93,9 @@ Creates class object using default serial port 0, specified Modbus slave ID.
 @param u8MBSlave Modbus slave ID (1..255)
 @ingroup setup
 */
-ModbusMaster::ModbusMaster(uint8_t u8MBSlave uint8_t u8Port)
+ModbusMaster::ModbusMaster(uint8_t u8MBSlave)
 {
-  _u8SerialPort = u8Port;
+  _u8SerialPort = 1;
   _u8MBSlave = u8MBSlave;
 }
 
